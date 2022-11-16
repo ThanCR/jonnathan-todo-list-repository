@@ -1,0 +1,164 @@
+:root{
+    --black:#222222;
+    --gray:#303030;
+    --lighterBlue: #1B378C;
+    --blue: #1B378C;
+    --lightBlue: #2947F2;
+    --secondary: #f2c329da;
+    --red: #ff2b2bd5;
+    --darkRed:#af1d1dd5 ;
+    --white: #ecececde;
+    --fuentePrincipal: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--fuentePrincipal);
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.5rem;
+}
+h1,h2,h3,h4{
+    margin: 0;
+}
+p{
+    font-size: 1.9rem;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 7vw auto 0 auto;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.actions{
+    margin-top: 2rem;
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+.button{
+    background-color: var(--lightBlue);
+    border: 0;
+    color: var(--white);
+    height: 4rem;
+    width: 10rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    transition: background-color ease-in 150ms;
+}
+.button:hover{
+    background-color: var(--lighterBlue);
+}
+.confirmationWindow{
+    background-color: rgba(0, 0, 0, .9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formTitle{
+    text-align: center;
+}
+.form{
+    height: 30rem;
+    width: 50rem;
+    padding: 10rem;
+}
+.form label{
+    display: block;
+    width: 30rem;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+.form input, .form textarea{
+    display: block;
+    width: 95%;
+    outline: none;
+    border-radius: .5rem;
+    border: none;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-family: var(--fuentePrincipal);
+    letter-spacing: 0px;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    width: 100%;
+}
+.buttonContainer button{
+    margin: 1rem;
+}
+.cancelButton{
+    background-color: var(--red);
+    transition: background-color ease 150ms
+}
+.cancelButton:hover{
+    background-color: var(--darkRed);
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-top: 6rem;
+}
+.task{
+    margin: 1rem;
+    width: 30rem;
+    background-color: var(--gray);
+    padding: 2.5rem;
+    border-radius: 2rem;
+}
+.task-title{
+    text-align: center;
+}
+.descriptionTitle{
+    font-weight: bold;
+}
+.descriptionText{
+    font-size: 1.5rem;
+}
+.centered{
+    display: flex;
+    justify-content: space-around;
+}
+.deleteButton{
+    background-color: var(--red);
+}
+.editButton{
+    background-color: var(--secondary);
+}
+
